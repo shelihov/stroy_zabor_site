@@ -1,0 +1,42 @@
+/* Основные стили */
+body {
+    font-family: 'Roboto', monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #53687C;
+    color: #F3C623;
+}
+
+h1 {
+    font-weight: 700; /* Жирный шрифт */
+}
+
+header {
+    padding: 5%;
+}
+
+.titl {
+    margin: 10%;
+}
+
+.svg_icon_messager {
+    margin: 10%;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #F3C623;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
