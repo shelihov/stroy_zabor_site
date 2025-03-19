@@ -6,23 +6,29 @@
     <title>Мой сайт</title>
     <!-- Подключение CSS файла -->
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1 id="titl">ЗАБОРСТРОЙ</h1>
-        <a href="https://t.me/shel_tg" target="_blank" rel="noopener noreferrer" id="svg_icon_messager">
-            <img src="svg/telegram.svg" alt="Telegram">
-        </a>
-        <a href="https://wa.me/79105688044" target="_blank" rel="noopener noreferrer" id="svg_icon_messager">
-            <img src="svg/whatsapp.svg" alt="WhatsApp">
-        </a>
+    <header class="header">
+        <div class="header-title">ЗАБОРСТРОЙ</div>
+        <div class="header-icons">
+            <a href="https://t.me/shel_tg" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-telegram" id="icon-telegram"></i>
+            <a href="https://wa.me/79105688044" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-whatsapp" id="icon-whatsapp"></i>
+            </a>
+        </div>
     </header>
 
     <main>
-        <section>
-            <h2>О нас</h2>
-            <p>Это пример текста в секции "О нас".</p>
+        <!-- Секция "О нас" -->
+        <section class="about">
+            <div class="text_about_left">профессиональный<br> монтаж заборов<br>
+                 в рязанской области</div>
+            <div class="text_about_right"> бригада<br> мастеров<br>
+                с многолетним<br> опытом работы</div>
+            <img src="image/big_logo.svg" alt="ЗАБОРСТРОЙ" width="500px" class="big_logo_about">
         </section>
 
         <section>
