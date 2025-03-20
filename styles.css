@@ -25,6 +25,11 @@ body {
     color: #F3C623;
 }
 
+h2 {
+    font-weight: bold;
+    font-size: 56px;
+}
+
 /* HEADER */
 header {
     display: flex;
@@ -65,8 +70,7 @@ header {
         "image image image";
     grid-template-columns: 1fr auto 1fr; /* Три столбца: левый текст, стрелка, правый текст */
     grid-template-rows: auto auto 1fr; /* Три строки */
-    height: 100vh; /* Высота контейнера на весь экран */
-    padding: 20px;
+    min-height: 50vh; 
 }
 .text_about_left {
     grid-area: left; /* Размещаем в левом верхнем углу */
@@ -94,6 +98,64 @@ header {
     border-radius: 8px;
 }
 
+
+/* Секция "Профлист" */
+.prof_list {
+    display: grid;
+    grid-template-areas:
+        "title title title"
+        "about price price"
+        "svg svg svg";
+    grid-template-columns: 1fr 1fr 1fr; /* Три равных столбца */
+    grid-template-rows: auto auto 1fr; /* Три строки: заголовок, контент, SVG */
+    min-height: 100vh; /* Высота контейнера на весь экран */
+    padding: 20px;
+    gap: 10px; /* Расстояние между элементами */
+    background-image: url('image/prof_list_photo.jpg'); /* Фоновое изображение */
+    background-size: cover; /* Растягиваем изображение на всю секцию */
+    background-position: center; /* Центрируем изображение */
+    background-repeat: no-repeat; /* Запрещаем повторение */
+    border: 1px solid #ddd; /* Граница для наглядности */
+    border-radius: 8px; /* Скругление углов */
+}
+
+
+.title_prof_list {
+    grid-area: title;
+    justify-self: start;
+    margin: 0; /* Убираем отступы по умолчанию */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);;
+}
+
+.about_prof_list {
+    grid-area: about;
+    justify-self: start;
+    margin: 10%; /* Убираем отступы по умолчанию */
+    background-color: #00000069;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.price_prof_list {
+    grid-area: price;
+    justify-self: end;
+    margin: 10%; /* Убираем отступы по умолчанию */
+    font-size: 35px;
+    font-weight: bold;
+    text-align: right;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);;
+}
+
+.prof_list_svg {
+    grid-area: svg;
+    justify-self: center; /* Центрирование по горизонтали */
+    align-self: center; /* Центрирование по вертикали */
+    max-width: 100%; /* Ограничение ширины изображения */
+    height: auto; /* Сохранение пропорций */
+    margin: 0; /* Убираем отступы по умолчанию */
+}
 
 main {
     padding: 20px;
