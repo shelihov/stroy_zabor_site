@@ -157,6 +157,67 @@ header {
     margin: 0; /* Убираем отступы по умолчанию */
 }
 
+/* Секция "Рабица" */
+.rabica {
+    display: grid;
+    grid-template-areas:
+        "title title title"
+        "about price price"
+        "svg svg svg";
+    grid-template-columns: 1fr 1fr 1fr; /* Три равных столбца */
+    grid-template-rows: auto auto 1fr; /* Три строки: заголовок, контент, SVG */
+    min-height: 100vh; /* Высота контейнера на весь экран */
+    padding: 20px;
+    gap: 10px; /* Расстояние между элементами */
+    background-image: url('image/rabica_photo.jpg'); /* Фоновое изображение */
+    background-size: cover; /* Растягиваем изображение на всю секцию */
+    background-position: center; /* Центрируем изображение */
+    background-repeat: no-repeat; /* Запрещаем повторение */
+    border: 1px solid #ddd; /* Граница для наглядности */
+    border-radius: 8px; /* Скругление углов */
+}
+
+/* Секция "Штакетник" */
+.euro {
+    display: grid;
+    grid-template-areas:
+        "title title title"
+        "about price price"
+        "svg svg svg";
+    grid-template-columns: 1fr 1fr 1fr; /* Три равных столбца */
+    grid-template-rows: auto auto 1fr; /* Три строки: заголовок, контент, SVG */
+    min-height: 100vh; /* Высота контейнера на весь экран */
+    padding: 20px;
+    gap: 10px; /* Расстояние между элементами */
+    background-image: url('image/euro_photo.jpg'); /* Фоновое изображение */
+    background-size: cover; /* Растягиваем изображение на всю секцию */
+    background-position: center; /* Центрируем изображение */
+    background-repeat: no-repeat; /* Запрещаем повторение */
+    border: 1px solid #ddd; /* Граница для наглядности */
+    border-radius: 8px; /* Скругление углов */
+}
+
+/* Секция "3д-сетка" */
+.setka_3d {
+    display: grid;
+    grid-template-areas:
+        "title title title"
+        "about price price"
+        "svg svg svg";
+    grid-template-columns: 1fr 1fr 1fr; /* Три равных столбца */
+    grid-template-rows: auto auto 1fr; /* Три строки: заголовок, контент, SVG */
+    min-height: 100vh; /* Высота контейнера на весь экран */
+    padding: 20px;
+    gap: 10px; /* Расстояние между элементами */
+    background-image: url('image/3d_photo.jpg'); /* Фоновое изображение */
+    background-size: cover; /* Растягиваем изображение на всю секцию */
+    background-position: center; /* Центрируем изображение */
+    background-repeat: no-repeat; /* Запрещаем повторение */
+    border: 1px solid #ddd; /* Граница для наглядности */
+    border-radius: 8px; /* Скругление углов */
+}
+
+
 main {
     padding: 20px;
 }
